@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-10-11, 22:27:37
+    Author     : 杨烁烁、
+*/
+*,p{margin:0;padding:0;}
+a,img{border:0;}
+body{
+	font-family: 'Helvetica', 'Lucida Grande', 'Arial', sans-serif;
+}
+.rain{
+	width: 360px;
+        height: 202px;
+        border: 1px solid #fff;
+}
+
+.rain,
+.rain.start{
+	background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+	background-position: 0 0, 0 0, 0 0, 0 0;
+	background-image: -webkit-gradient(linear, 
+                        left top, right top,
+                        color-stop(1%,rgba(0,0,0,.3)),
+                        color-stop(23%,rgba(0,0,0,.1)),
+                        color-stop(40%,rgba(255,231,87,.1)),
+                        color-stop(61%,rgba(255,231,87,.2)), 
+                        color-stop(70%,rgba(255,231,87,.1)),
+                        color-stop(80%,rgba(0,0,0,.1)),
+                        color-stop(100%,rgba(0,0,0,.25)));
+        background-color: #39f;
+   
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00BA1B', endColorstr='#00BA1B',GradientType=1 );
+}
+ 
+.rain.end{
+	-moz-transition-property: background-position;  
+	-moz-transition-duration: 30s;
+	-moz-transition-timing-function: linear;
+	-webkit-transition-property: background-position;  
+	-webkit-transition-duration: 30s;  
+	-webkit-transition-timing-function: linear;
+	-o-transition-property: background-position;  
+	-o-transition-duration: 30s;  
+	-o-transition-timing-function: linear;
+	transition-property: background-position;  
+	transition-duration: 30s;  
+	transition-timing-function: linear;
+	background-position: -5400px 0, -4600px 0, -3800px 0, -3000px 0;    
+}
+@-webkit-keyframes colors {
+	0% {background-color: rgba(51,153,255,.3);}
+	15% {background-color: rgba(242,70,201,.3);}
+	30% {background-color: rgba(68,83,242,.3);}
+	45% {background-color: rgba(68,242,98,.3);}
+	60% {background-color: rgba(242,87,212,.3);}
+	75% {background-color: rgba(237,242,85,.3);}
+	90% {background-color: rgba(242,0,6,.3);}
+	100% {background-color: rgba(51,153,255,.3);}
+}
+.rain{
+	-webkit-animation-direction: normal;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-name: colors;
+	-webkit-animation-timing-function: ease;
+}

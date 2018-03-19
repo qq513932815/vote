@@ -1,0 +1,27 @@
+
+/*悬浮窗*/
+
+#img{
+	width: 5%;
+	position: absolute;
+	left: 311;
+	top: 815;
+	visibility :hidden;
+	z-index: 1;
+}
+
+#img > span{
+	CURSOR:hand;
+	color:red;
+	font-weight:bold;
+	font-size:14px;
+	cursor:default;
+}
+
+#fdck {
+	width: 100%;
+	border:1px solid #c0c0c0;
+	margin:0 auto;
+	padding:5px 0;
+	background:rgba(200,200,200,.4);
+}

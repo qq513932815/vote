@@ -1,0 +1,193 @@
+﻿/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-10-11, 22:43:12
+    Author     : 杨烁烁、
+*/
+.rain{
+    position: relative;
+    width: 365px;
+    height: 208px;
+    margin: 0 auto 10px;
+}
+.border{
+    width: 357px;
+    height: 200px;
+    background: rgba(200, 200, 200, .4);
+    margin: 4px auto;
+    overflow: hidden;
+}
+/*登陆部分css样式*/
+#deng{
+    width: 228px;
+    height: 159px;
+    padding: 21px 65px;
+}
+#deng>p{
+    color: #333;
+    margin:8px 3px 2px;
+}
+/*输入文本框样式*/
+#deng>input#input_name,
+#deng>input#input_password{
+    border-radius: 5px;
+    margin-left:20px; 
+    color: #e1e5e1;
+    padding: 0px 4px;
+    border: 0px;
+    background: rgba(0,0,0,.3);
+    outline:none;
+    width: 200px;
+    height: 25px;
+}
+/*输入文本框获取焦点或悬停事件*/
+#deng>input#input_name:hover,
+#deng>input#input_password:hover,
+#deng>input#input_name:focus,
+#deng>input#input_password:focus{
+    background: rgba(0,0,0,.5); 
+ }
+ /*登录注册按钮样式*/
+#deng>input.deng,#deng>input.zhu{
+    cursor:pointer;
+    margin-left:20px; 
+    outline:none;
+    color: #fff;
+    border: 0px;
+    width: 76px;
+    height: 25px;
+    font-size: 18px;
+    margin-top: 15px; 
+}
+#deng>input.deng{
+    cursor:pointer;
+    border-radius: 5px;
+    background: #3f0;
+}
+#deng>input.zhu{
+    cursor:pointer;
+    border-radius: 5px;
+    margin-left: 50px;
+    color: #fff;
+    border: 0px;
+    background: #f64848;
+}
+#deng>input.deng:hover{
+    cursor:pointer;
+    background-color: #6f6;
+}
+#deng>input.zhu:hover{
+    cursor:pointer;
+    background: #f66;
+}
+/*注册部分样式*/
+#zhu{
+    display: none;
+    width: 334px;
+    height: 168px;
+    padding: 16px 12px;
+}
+/*对齐文字*/
+#zhu>div.y_p1,
+#zhu>div.y_p2{
+    margin-left: 64px;
+    margin-bottom: 14px;
+}
+#zhu>div.y_p3{
+    margin-left: 32px;
+    margin-bottom: 14px;
+}
+/*设置文本框样式*/
+#zhu>div>input{
+    border-radius: 5px;
+    color: #e1e5e1;
+    padding: 0px 4px;
+    border: 0px;
+    outline:none;
+    width: 140px;
+    height: 23px;
+    background: rgba(0,0,0,.3);
+}
+/*输入文本框获取焦点或悬停事件*/
+#zhu>div>input.studynumber:hover,
+#zhu>div>input.password:hover,
+#zhu>div>input.fist_possword:hover,
+#zhu>div>input.code:hover,
+#zhu>div>input.studynumber:focus,
+#zhu>div>input.password:focus,
+#zhu>div>input.fist_possword:focus,
+#zhu>div>input.code:focus{
+    background: rgba(0,0,0,.5); 
+ }
+#zhu>div>img{
+    cursor:pointer;
+    height: 25px;
+    position: absolute;
+    top: 131px;
+    left: 270px;
+    border-radius: 4px;
+}
+#zhu>input.go_top{
+    cursor:pointer;
+    font-size: 18px;
+    color: #fff;
+    width: 120px;
+    height: 25px;
+    outline:none;
+    background: #675ce6;
+    border-radius: 12px;
+    border: 0px;
+    margin: 12px 100px;
+}
+#zhu>input.go_deng{
+    color: #a00;
+    font-weight: bolder;
+    font-size: 12px;
+    background: rgba(0,0,0,0);
+    border: 0px;
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    outline:none;
+}
+/*登陆后部分样式*/
+#today{
+    display: none;
+    width: 237px;
+    height: 145px;
+    padding: 28px 60px;
+}
+#today>div.admin,
+#today>div.state{
+    margin-bottom: 30px;
+}
+#today>div.admin>p,
+#today>div.state>p{
+    display: inline-block;
+    height: 25px;
+    width: 80px;
+    font-size: 20px;
+    color: #246462;
+}
+#today>div.logout{
+    margin: 30px auto;
+    line-height:30px;
+    height: 30px;
+    color:#fff; 
+    text-align: center;
+    width:90px; 
+    border: 1px #fff solid;
+    border-radius: 15px;     background: rgba(0,0,0,.3)
+}
+#today>div.logout:hover{
+     background: rgba(0,0,0,.5);
+     border: 1px red solid;
+     cursor:pointer;
+     -webkit-user-select:none;   
+     -moz-user-select:none; 
+     -ms-user-select:none;  
+     user-select:none;
+}
